@@ -69,7 +69,7 @@ Bitte versuche als Ãœbung alles in Markdown zu beantworten. Hier ist ein [Cheats
  - ### this leifert eine Referenz auf das Objekt in dem man sich befindet
 ---
 12. FÃ¼r was dient der `instanceof` Operator. Gib ein sinnvolles Beispiel.
---- ### der Instanz of Operator überprüft ob das Objekt einen Instanc von einem bestimmten Type ist.
---- ### der Operator kann zu vergeichen von Operatornen verwendet werden da er die Type vergleicht.
+- ### der Instanz of Operator überprüft ob das Objekt einen Instanc von einem bestimmten Type ist.
+- ### der Operator kann zu vergeichen von Operatornen verwendet werden da er die Type vergleicht.
 ---
  Eclipse bietet auch Markdown unterstÃ¼tzung inklusive Preview. FÃ¼r die Verwendung muss kein Plugin installiert werden.
