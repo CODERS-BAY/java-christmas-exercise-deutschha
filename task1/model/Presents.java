@@ -1,45 +1,44 @@
 package model;
-import java.util.Scanner;
+
 import view.Console;
+public class Presents extends Child{
+	
+	private String geschenk;
+	private Object[] arr = new Object[100];
 
-public class Presents{
-	public int zaehleralt;
-	public String[] liste  = new String[4];
-	//public int zaehler;
-	public int zaehlen;
+
+	public Presents(String name, String strasse, String hausnr,String geschenk) {
+		super(name, strasse, hausnr);
+		this.geschenk = geschenk;
+	}
 	
+
+	/*
+	 	public void erweitern(int zaeler){
+	 	
+		Object[] subarr = new Object[getArr().length + zaeler];
+		System.arraycopy(getArr(), 0, subarr, 0, getArr().length);
+		setArr(subarr);
+		System.out.println(getArr().length);
+	}
+	*/
 	
-	public Presents() {
-		this.zaehlen = zaehlen +1;
-		Child eingabe = new Child();
-		System.out.println(zaehlen + "neu - alt "+ zaehleralt);
-		liste();
-		liste[liste.length -4] = eingabe.name;
-		liste[liste.length -3] = eingabe.strasse;
-		liste[liste.length -2] = eingabe.hausnr;
-		liste[liste.length -1] = eingabe.geschenk;
-		System.out.println(liste.length);
-		System.out.println(zaehlen + "neu - alt "+ zaehleralt);
-		ausgabe();
-		new Console().dialog();
+	public Object[] getArr() {
+		
+		return arr;
 	}
 
 
-	private void liste() {
-		if (zaehleralt != zaehlen) {
-			String[] backup = new String[liste.length + 4] ;
-			System.arraycopy(liste, 0, backup, 0, liste.length);
-			liste = backup;
-			zaehleralt = zaehlen;
-		}
+	public void setArr(Object[] arr) {
+		this.arr = arr;
 	}
-	
-	private void ausgabe() {
-		for (String i : liste) {
-			System.out.print(i + " " + "\n");
-		}
-	}
-	
-	
 
+	
+	
+	@Override
+	public String toString() {
+		return "Presents [geschenk=" + geschenk + "]";
+	}
+
+	
 }

@@ -1,5 +1,6 @@
 package application;
 
+import model.Presents;
 import view.Console;
 
 public class Main {
