@@ -68,8 +68,13 @@ Bitte versuche als Ãœbung alles in Markdown zu beantworten. Hier ist ein [Cheats
  - ### super wird benötigt um eine Methode in der Oberklasse aufzurufen
  - ### this leifert eine Referenz auf das Objekt in dem man sich befindet
 ---
-12. FÃ¼r was dient der `instanceof` Operator. Gib ein sinnvolles Beispiel.
-- ### der Instanz of Operator überprüft ob das Objekt einen Instanc von einem bestimmten Type ist.
-- ### der Operator kann zu vergeichen von Operatornen verwendet werden da er die Type vergleicht.
+12. Fuer was dient der `instanceof` Operator. Gib ein sinnvolles Beispiel.
+- ### Mit instanceof wird überprüft ob referenziertes Objekt zu einem Objekt einer KLasse passt
+``` java
+	 String string = "42!!!";
+ 		Object object = new Object();
+ 		System.out.println(object instanceof String); // liefert false
+ 		System.out.println(string instanceof String); // liefert true
+``` 
 ---
  Eclipse bietet auch Markdown unterstÃ¼tzung inklusive Preview. FÃ¼r die Verwendung muss kein Plugin installiert werden.
