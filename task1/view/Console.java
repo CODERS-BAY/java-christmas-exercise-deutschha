@@ -29,28 +29,7 @@ public class Console {
 		// falls ein weiterer Afuruf benötigt wird
 	}
 	
-	public void dialog() {
-		boolean programm = true;
-		do {
-		System.out.println("Bitte Passwort eingeben, für Wünsche -'kind'- eingeben: ");
-		String pwd = scan.next();
-		switch (pwd) {
-		case "kind":
-			geschWunsch();
-			break;
-		case "Santa":
-			abfrage();
-			break;
-		case "Elf":
-			elfarbeit();
-			Elf eingabeE = new Elf();
-			break;
-		default:
-			System.out.println("Das Passowrt ist nicht korrket");
-		}
-		}
-		while(programm);
-	}
+
 		
 		
 	public void geschWunsch() {
