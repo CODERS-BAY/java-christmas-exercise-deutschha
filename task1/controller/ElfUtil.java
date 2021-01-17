@@ -9,11 +9,13 @@ public class ElfUtil {
 
 	private boolean sortcount = false;
 	public boolean beladen;
-	Sledge lader;
-	Console geschenke;	
+	
+	Console geschenke = new Console();
+	Sledge lader = new Sledge(geschenke);
 	
 	public ElfUtil() {
-		laden();
+		
+		this.geschenke = geschenke;
 		sortieren();
 	}
 
